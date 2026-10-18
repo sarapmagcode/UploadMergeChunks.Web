@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Upload and Merge Chunks | Web</title>
+  </head>
+  
+  <body>
+    <div id="app">
+      <form method="post">
+        <input
+          type="text"
+          name="token"
+          id="token"
+          placeholder="Place jwt token here"
+          required
+        />
+        <br />
+        <br />
+        
+        <input
+          type="file"
+          name="file-uploads"
+          id="file-uploads"
+          multiple
+          required
+          accept="image/jpeg, image/jpg, image/png, image/webp"
+        />
+        <br />
+        <br />
+
+        <button type="submit">Submit</button>
+      </form>
+
+      <div id="result">
+        <!-- TODO: Display the file id with extension list here -->
+      </div>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
